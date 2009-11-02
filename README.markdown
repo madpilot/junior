@@ -28,7 +28,7 @@ Example
           $layout = 'views/index_layout.php';
           include('views/index.php');
         }
-        elseif(preg_match("/^about$/", $request)
+        elseif(preg_match("/^about$/", $request))
         {
           include('views/about.php');
         }
