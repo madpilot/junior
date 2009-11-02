@@ -15,35 +15,35 @@ Setup
 Example
 -------
 
-  <?php
-  require_once('lib/junior.php');
-  
-  function route($request)
-  {
-    global $vars, $layout;
+    <?php
+      require_once('lib/junior.php');
+      
+      function route($request)
+      {
+        global $vars, $layout;
 
-    if(preg_match("/^$/", $request))
-    {
-      $layout = "index_layout.php";
-      include('views/index.php');
-    }
-    elseif(preg_match("/^about$/", $request)
-    {
-      include('views/about.php');
-    }
-    elseif(preg_match("^/news/(\d+)$", $request, $m))
-    {
-      $id = $m[1];
-      include('views/news.php');
-    }
-    else
-    {
-      show_404();
-    }
-  }
- 
-  run();
-  ?>
+        if(preg_match("/^$/", $request))
+        {
+          $layout = "index_layout.php";
+          include('views/index.php');
+        }
+        elseif(preg_match("/^about$/", $request)
+        {
+          include('views/about.php');
+        }
+        elseif(preg_match("^/news/(\d+)$", $request, $m))
+        {
+          $id = $m[1];
+          include('views/news.php');
+        }
+        else
+        {
+          show_404();
+        }
+      }
+     
+      run();
+    ?>
 
 Configuration Options
 ---------------------
