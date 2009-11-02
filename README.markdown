@@ -11,6 +11,7 @@ Setup
 1. git clone git://github.com/madpilot/junior.git new_app
 2. Create an app.php file in the new_app root path
 3. Point apache at the public directory in the new_app directory
+4. Put your stylesheets and javascripts in the public directory (keep it clean, make sub-directories!)
 
 Example
 -------
