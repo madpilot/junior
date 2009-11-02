@@ -8,9 +8,9 @@ It supports friendly URLs using regular expressions, and uses a single layout fi
 Setup
 -----
 
-# git clone git://github.com/madpilot/junior.git new_app
-# Create an app.php file in the new_app root path
-# Point apache at the public directory in the new_app directory
+1. git clone git://github.com/madpilot/junior.git new_app
+2. Create an app.php file in the new_app root path
+3. Point apache at the public directory in the new_app directory
 
 Example
 -------
