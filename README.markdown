@@ -25,7 +25,7 @@ Example
 
         if(preg_match("/^$/", $request))
         {
-          $layout = "index_layout.php";
+          $layout = 'views/index_layout.php';
           include('views/index.php');
         }
         elseif(preg_match("/^about$/", $request)
