@@ -14,6 +14,11 @@
 		}
 	}
 
+  function show_404()
+  {
+    header('HTTP/1.0 404 Page Not Found');
+    include('views/404.php');
+  }
 
   function run()
   {

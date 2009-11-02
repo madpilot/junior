@@ -36,6 +36,10 @@ Example
         $id = $m[1];
         include('views/news.php');
       }
+      else
+      {
+        show_404();
+      }
     }
    
     run();
